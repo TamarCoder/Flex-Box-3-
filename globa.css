@@ -4,8 +4,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    list-style: none;
+
+
+}
+
+a {
     text-decoration: none;
+}
+
+ul {
+    list-style: none;
 }
 
 body {
@@ -13,14 +21,16 @@ body {
     font-family: "Inter", serif;
 }
 
+/* ყვლეაზე მტავარი კონტეინერი */
+
 .main-container {
     width: 100%;
     display: flex;
-
 }
 
 .aside {
     display: inline-flex;
+    height: 992px;
     padding: 12px 28px 708px 28px;
     flex-direction: column;
     align-items: center;
@@ -29,7 +39,9 @@ body {
     background: #E7EEFF;
 }
 
-.company-logo {
+.aside-logo {
+    width: 48px;
+    height: 48px;
     display: flex;
     height: 48px;
     justify-content: center;
@@ -39,84 +51,71 @@ body {
     border-bottom: 1px solid #002B81;
 }
 
-.menu-icons {
+.aside-icons {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 24px;
 }
 
-.icons {
-    display: flex;
-    width: 32px;
-    height: 32px;
-    justify-content: center;
-    align-items: center;
-    gap: 12px;
-    cursor: pointer;
-}
-
-.icons img {
-    display: flex;
+.aside-icons img {
     width: 24px;
     height: 24px;
-    justify-content: center;
-    align-items: center;
     flex-shrink: 0;
 }
 
-
 .main-content {
     width: 100%;
-    height: 900px;
+    display: flex;
+    flex-direction: column;
 
+    gap: 42px;
 }
 
 header {
-    width: 100%;
-    height: 80px;
-    background: #E7EEFF;
     display: flex;
-    align-items: center;
+    padding: 20px 0px;
     justify-content: space-between;
+    align-items: center;
+    background: #E7EEFF;
+    height: 80px;
 }
 
 .header-search {
     width: 326px;
     height: 28px;
-
     display: flex;
     align-items: center;
     justify-content: space-between;
+
 }
 
 .search-icon {
-    width: 24.01px;
-    height: 24.01px;
-    flex-shrink: 0;
+    display: flex;
+    width: 24px;
+    height: 24px;
+    justify-content: center;
+    align-items: center;
 }
 
 .search-input {
+    color: #000;
     width: 290px;
     height: 28px;
-    background: none;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
     border: none;
+    background: none;
 }
 
 .header-account {
-    width: 194px;
-    height: 40px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-}
-
-.header-account h4 {
-    color: #5E6577;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 24px
+    gap: 12px;
+    width: 194px;
+    height: 40px;
 }
 
 .header-account img {
@@ -124,3 +123,109 @@ header {
     height: 40px;
     border-radius: 60px;
 }
+
+.header-account p {
+    color: #5E6577;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+
+}
+
+main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.main-wrapper {
+    max-width: 1336px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 42px;
+}
+
+.main-banner {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.banner-content {
+    width: 550px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.banner-btn {
+    display: flex;
+    padding: 8px 24px 8px 12px;
+    align-items: center;
+    gap: 12px;
+    border-radius: 16px;
+    background: #E7EEFF;
+}
+
+.card-container {
+    width: 100%;
+    display: flex;
+    
+    justify-content:space-around;
+    flex-wrap: wrap;
+    gap: 42px;
+
+}
+
+.card {
+    width: 353.33px;
+    height: 355px;
+}
+
+.card-img {
+    width: 353.33px;
+    height: 275px;
+}
+
+.card-img img {
+    width: 353.33px;
+    height: 275px;
+}
+
+.card-info {
+    display: flex;
+    padding: 8px 12px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    align-self: stretch;
+    border-radius: 0px 0px 24px 24px;
+    background: #E7EEFF;
+}
+
+.card-info p {
+    color: #000;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.card-info span {
+    color: #606060;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+/* ყვლეაზე მტავარი კონტეინერი */
+
+/*საიდ ბარი*/
